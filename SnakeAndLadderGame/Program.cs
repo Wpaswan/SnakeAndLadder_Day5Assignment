@@ -9,6 +9,7 @@ while (c != 'n')
     Console.WriteLine("\t((((((((3.Position of player      ))))))))");
     Console.WriteLine("\t((((((((4.Position of snaek       ))))))))");
     Console.WriteLine("\t((((((((5.Winning positon 100     ))))))))");
+    Console.WriteLine("\t((((((((6.Number of time dice roll))))))))");
     int ch = Convert.ToInt32(Console.ReadLine());
     switch (ch)
     {
@@ -31,6 +32,10 @@ while (c != 'n')
         case 5:
             WinningPosition100 w=new WinningPosition100();
             w.win_pos();
+            break;
+        case 6:
+            Num_Of_Time_DiceRolled obj=new Num_Of_Time_DiceRolled();
+            obj.DiceCount();
             break;
 
           
