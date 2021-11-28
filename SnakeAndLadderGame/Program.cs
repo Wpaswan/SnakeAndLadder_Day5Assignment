@@ -7,6 +7,7 @@ while (c != 'n')
     Console.WriteLine("\t((((((((1.Start With Zero         ))))))))");
     Console.WriteLine("\t((((((((2.Roll Dice               ))))))))");
     Console.WriteLine("\t((((((((3.Position of player      ))))))))");
+    Console.WriteLine("\t((((((((4.Position of snaek       ))))))))");
     int ch = Convert.ToInt32(Console.ReadLine());
     switch (ch)
     {
@@ -21,6 +22,10 @@ while (c != 'n')
         case 3:
             PlayerPosition pp=new PlayerPosition();
             pp.position();
+            break;
+        case 4:
+            SnakePosition sp1=new SnakePosition();
+            sp1.pos_Snake();
             break;
 
           
